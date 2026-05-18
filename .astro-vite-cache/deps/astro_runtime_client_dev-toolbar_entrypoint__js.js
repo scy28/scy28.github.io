@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   ] = await Promise.all([
     loadDevToolbarApps(),
     import("./astro-OWBQNLIU.js"),
-    import("./audit-HSSMJZT5.js"),
+    import("./audit-OJDZCQCI.js"),
     import("./xray-JNIFT5UN.js"),
     import("./settings-XNMSICJR.js"),
     import("./toolbar-DYYDHFWX.js"),

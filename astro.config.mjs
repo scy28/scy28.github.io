@@ -5,5 +5,6 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   vite: {
     cacheDir: process.env.ASTRO_VITE_CACHE_DIR ?? ".astro-vite-cache",
+    site: "https://scy28.github.io",
   },
 });

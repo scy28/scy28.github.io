@@ -1,8 +1,8 @@
 import {
-  require_lib
+  require_lib as require_lib2
 } from "./chunk-FMKMA7FV.js";
 import {
-  require_lib as require_lib2
+  require_lib
 } from "./chunk-S5JL2KLY.js";
 import {
   attachTooltipToHighlight,
@@ -49,8 +49,8 @@ function processAnnotations() {
 }
 
 // node_modules/astro/dist/runtime/client/dev-toolbar/apps/audit/rules/a11y.js
-var import_aria_query = __toESM(require_lib2(), 1);
-var import_axobject_query = __toESM(require_lib(), 1);
+var import_aria_query = __toESM(require_lib(), 1);
+var import_axobject_query = __toESM(require_lib2(), 1);
 var WHITESPACE_REGEX = /\s+/;
 var a11y_required_attributes = {
   a: ["href"],
@@ -1580,4 +1580,4 @@ var audit_default = {
 export {
   audit_default as default
 };
-//# sourceMappingURL=audit-HSSMJZT5.js.map
+//# sourceMappingURL=audit-OJDZCQCI.js.map

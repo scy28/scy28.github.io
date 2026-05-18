@@ -8,7 +8,7 @@ type NoteFrontmatter = {
   description?: string;
 };
 
-const noteModules = import.meta.glob("../content/notes/*.md", { eager: true });
+const noteModules = import.meta.glob("./notes/*.md", { eager: true });
 const notes = Object.entries(noteModules)
   .map(([path, mod]) => {
     const file = path.split("/").pop() ?? "";
@@ -16,7 +16,9 @@ const notes = Object.entries(noteModules)
     const frontmatter = (mod as MarkdownInstance<NoteFrontmatter>).frontmatter;
     return { id, frontmatter };
   })
-  .sort((a, b) => (b.frontmatter.date ?? "").localeCompare(a.frontmatter.date ?? ""));
+  .sort((a, b) =>
+    (b.frontmatter.date ?? "").localeCompare(a.frontmatter.date ?? ""),
+  );
 ---
 
 <BaseLayout title="技术笔记">
