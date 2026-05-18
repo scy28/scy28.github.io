@@ -1,0 +1,39 @@
+﻿---
+import type { MarkdownInstance } from "astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+type NoteFrontmatter = {
+  title: string;
+  date?: string;
+  description?: string;
+};
+
+const noteModules = import.meta.glob("../content/notes/*.md", { eager: true });
+const notes = Object.entries(noteModules)
+  .map(([path, mod]) => {
+    const file = path.split("/").pop() ?? "";
+    const id = file.replace(/\.md$/, "");
+    const frontmatter = (mod as MarkdownInstance<NoteFrontmatter>).frontmatter;
+    return { id, frontmatter };
+  })
+  .sort((a, b) => (b.frontmatter.date ?? "").localeCompare(a.frontmatter.date ?? ""));
+---
+
+<BaseLayout title="技术笔记">
+  <section class="hero">
+    <h1>技术笔记</h1>
+    <p>这里是公开学习笔记列表。</p>
+  </section>
+
+  <section class="grid">
+    {
+      notes.map((note) => (
+        <div class="card">
+          <h2>{note.frontmatter.title}</h2>
+          <p>{note.frontmatter.description ?? "暂无摘要"}</p>
+          <a href={`/notes/${note.id}`}>阅读笔记 →</a>
+        </div>
+      ))
+    }
+  </section>
+</BaseLayout>

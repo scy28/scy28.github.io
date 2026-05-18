@@ -1,0 +1,36 @@
+﻿---
+import type { MarkdownInstance } from "astro";
+import NoteLayout from "../../layouts/NoteLayout.astro";
+
+type NoteFrontmatter = {
+  title: string;
+  date?: string;
+  description?: string;
+};
+
+type NoteModule = MarkdownInstance<NoteFrontmatter>;
+
+export async function getStaticPaths() {
+  const noteModules = import.meta.glob("../../content/notes/*.md");
+  const legacyPageModules = import.meta.glob("./*.md");
+  const legacyPageIds = new Set(
+    Object.keys(legacyPageModules).map((path) => path.split("/").pop()?.replace(/\.md$/, "")),
+  );
+
+  return Object.entries(noteModules)
+    .map(([path, load]) => {
+      const id = path.split("/").pop()?.replace(/\.md$/, "") ?? "";
+      return { id, load };
+    })
+    .filter(({ id }) => !legacyPageIds.has(id))
+    .map(({ id, load }) => ({ params: { id }, props: { load } }));
+}
+
+const { load } = Astro.props as { load: () => Promise<NoteModule> };
+const note = await load();
+const { Content, frontmatter } = await note.render();
+---
+
+<NoteLayout frontmatter={frontmatter}>
+  <Content />
+</NoteLayout>

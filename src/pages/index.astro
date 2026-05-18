@@ -1,11 +1,41 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Scy的个人网站">
+	<section class="hero">
+		<h1>你好，我是Scy。</h1>
+		<p>
+			这里是我的个人网站。我会把技术笔记、项目经历、学习路线和阶段性思考整理在这里。
+			它既是我的公开笔记本，也是我的项目作品集。
+		</p>
+	</section>
+
+	<section class="grid">
+		<div class="card">
+			<h2>项目方向</h2>
+			<p>嵌入式 Linux、单片机工程开发、机器人控制、AI 硬件产品</p>
+			<span class="tag">C++</span>
+			<span class="tag">嵌入式 Linux</span>
+			<span class="tag">ROS</span>
+			<span class="tag">AI Hardware</span>
+		</div>
+
+		<div class="card">
+			<h2>最近在做</h2>
+			<p>桌面 AI 助手、AI Vibecoding专用键盘</p>
+		</div>
+
+		<div class="card">
+			<h2>精选项目</h2>
+			<p>把真实做过的项目整理成结构化项目页。</p>
+			<a href="/projects">查看项目 →</a>
+		</div>
+
+		<div class="card">
+			<h2>技术笔记</h2>
+			<p>把零散学习内容整理成 Markdown 笔记。</p>
+			<a href="/notes">查看笔记 →</a>
+		</div>
+	</section>
+</BaseLayout>

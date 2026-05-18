@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="项目经历">
+    <section class="hero">
+        <h1>项目经历</h1>
+        <p>
+            这里整理我做过或正在推进的项目。每个项目尽量按照“背景—我的工作—技术栈—难点—成果”的结构记录。
+        </p>
+    </section>
+
+    <section class="grid">
+        <div class="card">
+            <h2>多麦克风阵列无人机定位系统</h2>
+            <p>
+                基于工业 PC、多块麦克风阵列和 C++
+                网络通信，实现声源方位采集、状态监控和上位机通信。
+            </p>
+            <span class="tag">C++</span>
+            <span class="tag">TCP</span>
+            <span class="tag">多线程</span>
+            <span class="tag">工控机</span>
+        </div>
+
+        <div class="card">
+            <h2>AI 桌面备忘钟 / 番茄钟</h2>
+            <p>
+                面向桌面工作流的 AI
+                状态显示和备忘设备，关注屏幕界面、芯片选型、交互方式和产品形态设计。
+            </p>
+            <span class="tag">LVGL</span>
+            <span class="tag">嵌入式 Linux</span>
+            <span class="tag">产品设计</span>
+        </div>
+
+        <div class="card">
+            <h2>双机械臂协同控制研究</h2>
+            <p>
+                面向配电箱线缆安装任务，研究双机械臂路径规划、轨迹生成、接触状态识别和变阻抗控制。
+            </p>
+            <span class="tag">机器人控制</span>
+            <span class="tag">RRT*</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">阻抗控制</span>
+        </div>
+
+        <div class="card">
+            <h2>AI Vibecoding 专用键盘</h2>
+            <p>
+                面向 AI
+                辅助编程场景的效率硬件，关注按键交互、软件联动、用户工作流和产品商业化。
+            </p>
+            <span class="tag">AI 工具</span>
+            <span class="tag">硬件产品</span>
+            <span class="tag">创业项目</span>
+        </div>
+    </section>
+</BaseLayout>
