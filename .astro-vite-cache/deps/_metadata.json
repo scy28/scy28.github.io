@@ -1,31 +1,31 @@
 {
-  "hash": "c6e08c74",
-  "configHash": "3a1a1aa2",
+  "hash": "98c11c69",
+  "configHash": "8d7994dd",
   "lockfileHash": "762f43cb",
-  "browserHash": "3fbad908",
+  "browserHash": "9005e6b1",
   "optimized": {
     "astro > aria-query": {
       "src": "../../node_modules/aria-query/lib/index.js",
       "file": "astro___aria-query.js",
-      "fileHash": "9fe67739",
+      "fileHash": "ed173bac",
       "needsInterop": true
     },
     "astro > axobject-query": {
       "src": "../../node_modules/axobject-query/lib/index.js",
       "file": "astro___axobject-query.js",
-      "fileHash": "839d7825",
+      "fileHash": "afce572e",
       "needsInterop": true
     },
     "astro > html-escaper": {
       "src": "../../node_modules/html-escaper/esm/index.js",
       "file": "astro___html-escaper.js",
-      "fileHash": "b1a2596a",
+      "fileHash": "927cbb18",
       "needsInterop": false
     },
     "astro/runtime/client/dev-toolbar/entrypoint.js": {
       "src": "../../node_modules/astro/dist/runtime/client/dev-toolbar/entrypoint.js",
       "file": "astro_runtime_client_dev-toolbar_entrypoint__js.js",
-      "fileHash": "93b25374",
+      "fileHash": "513ed286",
       "needsInterop": false
     }
   },
@@ -45,14 +45,14 @@
     "chunk-455OVRXP": {
       "file": "chunk-455OVRXP.js"
     },
-    "audit-OJDZCQCI": {
-      "file": "audit-OJDZCQCI.js"
-    },
-    "chunk-FMKMA7FV": {
-      "file": "chunk-FMKMA7FV.js"
+    "audit-L6BXRXEV": {
+      "file": "audit-L6BXRXEV.js"
     },
     "chunk-S5JL2KLY": {
       "file": "chunk-S5JL2KLY.js"
+    },
+    "chunk-FMKMA7FV": {
+      "file": "chunk-FMKMA7FV.js"
     },
     "xray-JNIFT5UN": {
       "file": "xray-JNIFT5UN.js"

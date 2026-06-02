@@ -160,3 +160,31 @@ a {
     border-radius: 12px;
     overflow-x: auto;
 }
+
+.article pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+}
+
+.article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.article th,
+.article td {
+    border: 1px solid #d1d5db;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.article th {
+    background: #f9fafb;
+    color: #111827;
+    font-weight: 600;
+}
