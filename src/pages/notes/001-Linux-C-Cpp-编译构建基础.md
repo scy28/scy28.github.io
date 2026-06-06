@@ -4,8 +4,9 @@ title: "Linux C/C++ 编译构建基础：从 GCC 到 Makefile 再到 CMake"
 date: "2026-05-18"
 lasteditdate: "2026-05-20"
 description: "梳理 C/C++ 程序从 GCC 编译流程、Makefile 构建规则到 CMake 工程管理的基础知识。"
+noteid: "001"
 ---
-# Linux C/C++ 编译构建基础：从 GCC 到 Makefile 再到 CMake
+
 ## 1. 笔记简介
 
 这篇笔记整理了 C/C++ 程序从源代码到可执行文件的基本构建过程，重点包括 GCC/G++ 的编译流程、Makefile 的构建规则、静态库与动态库的区别，以及 CMake 在工程管理中的作用。
