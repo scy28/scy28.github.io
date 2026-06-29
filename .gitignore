@@ -4,8 +4,19 @@ dist/
 # generated types
 .astro/
 
+# local Astro/Vite caches
+.astro-vite-cache/
+.astro-vite-cache-build-check/
+
 # dependencies
 node_modules/
+
+# local Codex skills and workspace state
+.codex/
+
+# browser snapshots used while producing videos
+/public/创作中心 - 哔哩哔哩弹幕视频网*.html
+/public/创作中心 - 哔哩哔哩弹幕视频网*_files/
 
 # logs
 npm-debug.log*
